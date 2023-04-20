@@ -2,7 +2,7 @@ package fizzbuzz;
 
 public class FizzBuzz {
 	
-	public static String fizzbuzz(int n) {
+	public String fizzbuzz(int n) {
 		StringBuilder str = new StringBuilder();
 		if (n%3==0) str.append("fizz");
 		if (n%5==0) str.append("buzz");

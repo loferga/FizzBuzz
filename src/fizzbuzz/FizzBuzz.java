@@ -3,9 +3,11 @@ package fizzbuzz;
 public class FizzBuzz {
 	
 	public static String fizzbuzz(int n) {
-		if (n%3 == 0) return "fizz";
-		if (n%5 == 0) return "buzz";
-		return Integer.toString(n);
+		StringBuilder str = new StringBuilder();
+		if (n%3==0) str.append("fizz");
+		if (n%5==0) str.append("buzz");
+		if (str.length() == 0) str.append(Integer.toString(n));
+		return str.toString();
 	}
 	
 }
